@@ -1,1 +1,5 @@
-console.log('123');
+import Scene from './scene';
+
+document.addEventListener('DOMContentLoaded', () => {
+  new Scene();
+});

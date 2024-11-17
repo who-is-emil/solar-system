@@ -10,6 +10,16 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @import "@/scss/vars/index.scss";
+          @import "@/scss/mixins/index.scss";
+        `,
+      },
+    },
+  },
   build: {
     outDir: 'dist',
     rollupOptions: {
