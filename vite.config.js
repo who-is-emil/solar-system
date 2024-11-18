@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import path from 'path';
+import glsl from 'vite-plugin-glsl';
 
 export default defineConfig({
   server: {
@@ -26,4 +27,5 @@ export default defineConfig({
       input: 'index.html',
     },
   },
+  plugins: [glsl()],
 });
